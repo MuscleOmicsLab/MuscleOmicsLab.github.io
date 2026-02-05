@@ -19,9 +19,9 @@ body {
   position: fixed;       /* Fixed nav stays while scrolling */
   top: 0;
   left: 0;
-  width: 320px;          /* Explicit width */
+  width: 340px;          /* Explicit width */
   height: 100vh;         /* Full viewport height */
-  padding: 60px;
+  padding: 20px;
   border-right: 1px solid #ddd;
   background: #ffffff;
   overflow-y: auto;      /* Scroll inside nav if long */
@@ -59,9 +59,9 @@ body {
 
 /* RIGHT CONTENT */
 .content {
-  margin-left: 325px;
-  max-width: calc(100% - 320px);
-  padding: 60px;
+  margin-left: 345px;
+  max-width: calc(100% - 340px);
+  padding: 40px;
   min-height: 100vh;
   box-sizing: border-box;
 }
