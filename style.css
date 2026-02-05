@@ -1,0 +1,75 @@
+/* General body */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  background: #f9f9f9;
+}
+
+/* Flex container for two columns */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT NAVIGATION COLUMN */
+.nav {
+  width: 280px;
+  padding: 40px;
+  border-right: 1px solid #ddd;
+  background: #ffffff;
+}
+
+.nav h1 {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+.nav p {
+  margin-top: 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.nav ol {
+  padding-left: 20px;
+}
+
+.nav li {
+  margin-bottom: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0057b8;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT CONTENT COLUMN */
+.content {
+  flex: 1;
+  padding: 60px;
+  max-width: 900px;
+  background: #fafafa;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
