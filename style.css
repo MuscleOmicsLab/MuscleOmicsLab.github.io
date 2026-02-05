@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 400px;
   height: 100vh;
   padding: 40px 20px;
   border-right: 1px solid #ddd;
@@ -84,8 +84,8 @@ body {
 
 /* RIGHT CONTENT */
 .content {
-  margin-left: 345px;
-  max-width: calc(100% - 340px);
+  margin-left: 405px;
+  max-width: calc(100% - 410px);
   padding: 40px;
   min-height: 100vh;
   box-sizing: border-box;
