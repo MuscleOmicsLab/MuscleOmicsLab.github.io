@@ -5,24 +5,27 @@ body {
   padding: 0;
   color: #111;
   background: #f9f9f9;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box;
 }
 
-/* Flex container */
+/* Container not strictly needed with fixed nav, but kept for clarity */
 .container {
   display: flex;
 }
 
-/* LEFT NAVIGATION COLUMN */
+/* LEFT NAVIGATION */
 .nav {
-  position: fixed;       /* Keep nav fixed */
+  position: fixed;       /* Fixed nav stays while scrolling */
   top: 0;
   left: 0;
-  width: 280px;
+  width: 280px;          /* Explicit width */
   height: 100vh;         /* Full viewport height */
   padding: 40px;
   border-right: 1px solid #ddd;
   background: #ffffff;
-  overflow-y: auto;      /* Scroll inside nav if content is long */
+  overflow-y: auto;      /* Scroll inside nav if long */
+  box-sizing: border-box; /* Include padding in width */
 }
 
 .nav h1 {
@@ -54,27 +57,23 @@ body {
   text-decoration: underline;
 }
 
-/* RIGHT CONTENT COLUMN */
+/* RIGHT CONTENT */
 .content {
-  margin-left: 280px;    /* Offset content to the right of fixed nav */
+  margin-left: 280px;           /* Offset right column to the right of nav */
   padding: 60px;
-  box-sizing: border-box; 
-  max-width: calc(100% - 280px);
-  background: #fafafa;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
+/* Content headings and images */
 .content h2 {
   margin-top: 0;
 }
 
-/* Responsive for mobile */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
   .nav {
-    position: relative;  /* Undo fixed nav on mobile */
+    position: relative;          /* Undo fixed nav on mobile */
     width: 100%;
     height: auto;
     border-right: none;
@@ -82,6 +81,7 @@ body {
   }
 
   .content {
-    margin-left: 0;      /* Remove offset on mobile */
+    margin-left: 0;             /* Remove offset on mobile */
+    padding: 20px;
   }
 }
