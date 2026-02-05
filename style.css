@@ -7,18 +7,22 @@ body {
   background: #f9f9f9;
 }
 
-/* Flex container for two columns */
+/* Flex container */
 .container {
   display: flex;
-  min-height: 100vh;
 }
 
 /* LEFT NAVIGATION COLUMN */
 .nav {
+  position: fixed;       /* Keep nav fixed */
+  top: 0;
+  left: 0;
   width: 280px;
+  height: 100vh;         /* Full viewport height */
   padding: 40px;
   border-right: 1px solid #ddd;
   background: #ffffff;
+  overflow-y: auto;      /* Scroll inside nav if content is long */
 }
 
 .nav h1 {
@@ -52,7 +56,7 @@ body {
 
 /* RIGHT CONTENT COLUMN */
 .content {
-  flex: 1;
+  margin-left: 280px;    /* Offset content to the right of fixed nav */
   padding: 60px;
   max-width: 900px;
   background: #fafafa;
@@ -67,9 +71,16 @@ body {
   .container {
     flex-direction: column;
   }
+
   .nav {
+    position: relative;  /* Undo fixed nav on mobile */
     width: 100%;
+    height: auto;
     border-right: none;
     border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    margin-left: 0;      /* Remove offset on mobile */
   }
 }
