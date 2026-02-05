@@ -59,7 +59,8 @@ body {
 
 /* RIGHT CONTENT */
 .content {
-  margin-left: 500px;           /* Offset right column to the right of nav */
+  margin-left: 320px;
+  max-width: calc(100% - 280px);
   padding: 40px;
   min-height: 100vh;
   box-sizing: border-box;
