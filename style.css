@@ -58,6 +58,7 @@ body {
 .content {
   margin-left: 280px;    /* Offset content to the right of fixed nav */
   padding: 60px;
+  box-sizing: border-box; 
   max-width: calc(100% - 280px);
   background: #fafafa;
 }
