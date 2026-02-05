@@ -59,8 +59,8 @@ body {
 
 /* RIGHT CONTENT */
 .content {
-  margin-left: 280px;           /* Offset right column to the right of nav */
-  padding: 60px;
+  margin-left: 300px;           /* Offset right column to the right of nav */
+  padding: 0px;
   min-height: 100vh;
   box-sizing: border-box;
 }
