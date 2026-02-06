@@ -1,8 +1,6 @@
 /* General body */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  line-height: 5px;
   margin: 0;
   padding: 0;
   color: #111;
@@ -90,7 +88,7 @@ body {
 .content {
   margin-left: 400px;        /* must match .nav width */
   padding: 40px;
-  line-height: 10px;
+  line-height: 50px;
   min-height: 100vh;
   box-sizing: border-box;
 
