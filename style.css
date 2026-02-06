@@ -90,6 +90,7 @@ body {
 .content {
   margin-left: 400px;        /* must match .nav width */
   padding: 40px;
+  line-height: 10px;
   min-height: 100vh;
   box-sizing: border-box;
 
