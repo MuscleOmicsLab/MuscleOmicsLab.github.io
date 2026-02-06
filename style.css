@@ -88,7 +88,7 @@ body {
 .content {
   margin-left: 400px;        /* must match .nav width */
   padding: 40px;
-  line-height: 50px;
+  line-height: 1.5;
   min-height: 100vh;
   box-sizing: border-box;
 
