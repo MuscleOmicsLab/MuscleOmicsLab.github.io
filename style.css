@@ -26,10 +26,10 @@ body {
   background: #ffffff;
   box-sizing: border-box;
 
-  /* Center nav content vertically */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-top: 60px;
 }
 
 /* Lab title */
@@ -37,10 +37,6 @@ body {
   font-size: 1.8em;
   margin: 0 0 6px 0;
   text-align: center;
-}
-
-.nav {
-  padding-top: 60px;
 }
 
 .nav p {
@@ -52,7 +48,7 @@ body {
 
 /* Navigation list */
 .nav ol {
-  list-style: none;        /* remove numbering */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -69,17 +65,23 @@ body {
   text-decoration: none;
   color: #0057b8;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover effect */
+/* Hover effects: fade others, enlarge hovered */
+.nav:hover a {
+  opacity: 0.5;
+}
+
 .nav a:hover {
-  text-decoration: underline;
+  opacity: 1;
+  transform: scale(1.12);
 }
 
 /* Active page */
 .nav a.active {
   font-weight: 700;
+  opacity: 1;
 }
 
 /* RIGHT CONTENT */
@@ -90,20 +92,43 @@ body {
   padding: 40px;
   min-height: 100vh;
   box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
 }
 
-/* Content headings and images */
+/* Inner content width control */
+.content > * {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Content headings */
+.content h1,
 .content h2 {
   margin-top: 0;
+}
+
+/* PROFILE (image + text side-by-side) */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .nav {
-    position: relative;          /* Undo fixed nav on mobile */
+    position: relative;
     width: 100%;
     height: auto;
     border-right: none;
@@ -111,7 +136,24 @@ body {
   }
 
   .content {
-    margin-left: 0;             /* Remove offset on mobile */
+    position: relative;
+    margin-left: 0;
     padding: 20px;
+    align-items: stretch;
+  }
+
+  .content > * {
+    max-width: 100%;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile img {
+    margin-bottom: 1rem;
   }
 }
+
