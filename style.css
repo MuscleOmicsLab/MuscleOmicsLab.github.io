@@ -84,11 +84,15 @@ body {
 
 /* RIGHT CONTENT */
 .content {
+  position: fixed;
   margin-left: 405px;
   max-width: calc(100% - 410px);
   padding: 40px;
   min-height: 100vh;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Content headings and images */
