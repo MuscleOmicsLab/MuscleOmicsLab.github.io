@@ -84,9 +84,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 40px 20px;
-  min-height: 100vh;
+  justify-content: center; /* vertical centering */
+  min-height: calc(100vh - 160px); /* subtract navbar height from viewport */
+  padding: 160px 20px 40px 20px; /* top padding pushes content below navbar */
   box-sizing: border-box;
 }
 
@@ -107,8 +107,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* vertical centering */
-  min-height: calc(100vh - 200px); /* full viewport minus navbar */
-  padding: 0 20px;
+  min-height: calc(100vh - 160px); /* full viewport minus navbar */
+  padding: 160px 20px 40px 20px;
   flex-direction: column;
 }
 
@@ -145,8 +145,8 @@ body {
   flex-direction: row;
   margin: 0 auto 2.5rem auto;
   max-width: 900px;
-  padding: 40px 20px;
-  min-height: 100vh;
+  min-height: calc(100vh - 160px); /* full viewport minus navbar */
+  padding: 160px 20px 40px 20px;
   gap: 1.5rem;
   align-items: flex-start;
 }
