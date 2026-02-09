@@ -85,12 +85,12 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2500px; /* adjust height as needed */
-  background: rgba(255, 255, 255, 0.95); /* optional: semi-transparent background */
-  z-index: 1000; /* ensure it sits above page content */
+  height: 180px;   /* increase from 120px */
+  background: rgba(255, 255, 255, 0.95);
   display: flex;
-  align-items: flex-end; /* bottom-align the image */
-  padding-left: 20px; /* space from left edge */
+  align-items: flex-end;
+  padding-left: 20px;
+  z-index: 1000;
   box-sizing: border-box;
 }
 
@@ -98,7 +98,7 @@ body {
   height: 120px;    /* scale image to banner height */
   width: auto;     /* maintain aspect ratio */
   object-fit: contain;
-  margin-bottom: 10px;
+  max-width: 20%;  
 }
 
 /* Footer list */
