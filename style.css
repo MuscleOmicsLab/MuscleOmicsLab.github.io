@@ -107,14 +107,39 @@ body {
 /* ---------------------- MAIN CONTENT ---------------------- */
 .content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center; /* vertical centering */
-  min-height: calc(100vh - 160px); /* subtract navbar height from viewport */
-  padding: 160px 20px 40px 20px; /* top padding pushes content below navbar */
-  box-sizing: border-box;
+  min-height: calc(100vh - 160px); /* full viewport minus navbar */
+  padding: 260px 20px 40px 20px;
+  flex-direction: column;
 }
 
+.about-inner {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-inner h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.about-inner p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-inner p strong {
+  color: #0057b8; /* subtle highlight */
+}
 /* Limit width of all child blocks */
 .content > * {
   max-width: 900px;
