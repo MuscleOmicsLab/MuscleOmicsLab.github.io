@@ -79,7 +79,7 @@ body {
   opacity: 1;
 }
 
-/* ---------------------- BOTTOM FOOTEE ---------------------- */
+/* ---------------------- BOTTOM FOOTER ---------------------- */
 .footer {
   position: fixed;
   bottom: 0;
@@ -95,9 +95,10 @@ body {
 }
 
 .footer img {
-  height: 100%;    /* scale image to banner height */
+  height: 120px;    /* scale image to banner height */
   width: auto;     /* maintain aspect ratio */
   object-fit: contain;
+  margin-bottom: 10px;
 }
 
 /* Footer list */
