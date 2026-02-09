@@ -1,4 +1,4 @@
-/* General body */
+/* ---------------------- General Body ---------------------- */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
@@ -6,17 +6,17 @@ body {
   padding: 0;
   color: #111;
   background: #f9f9f9;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
-/* Container not strictly needed with fixed nav, but kept for clarity */
+/* ---------------------- Container ---------------------- */
 .container {
   display: flex;
+  flex-direction: column;
 }
 
-/* TOP NAVIGATION BAR */
-
+/* ---------------------- TOP NAVIGATION BAR ---------------------- */
 .nav {
   position: fixed;
   top: 0;
@@ -26,24 +26,21 @@ body {
   box-sizing: border-box;
   padding: 20px 0;
   z-index: 1000;
-  padding: 30px 0 15px 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Lab title */
-.nav h1 {
-  font-size: 1.8em;
-  margin: 0 0 6px 0;
-  text-align: center;
+.nav img {
+  max-height: 80px;
+  margin-bottom: 10px;
 }
 
 .nav p {
-  margin: 0 0 32px 0;
+  margin: 0 0 20px 0;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.95em;
   color: #555;
 }
 
@@ -54,22 +51,18 @@ body {
   margin: 0;
 }
 
-/* List items */
 .nav li {
   display: inline-block;
   margin: 0 18px;
 }
 
-/* Links */
 .nav a {
-  display: inline-block;
   text-decoration: none;
   color: #0057b8;
   font-weight: 500;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover effects: fade others, enlarge hovered */
 .nav:hover a {
   opacity: 0.5;
 }
@@ -79,116 +72,44 @@ body {
   transform: scale(1.12);
 }
 
-/* Active page */
 .nav a.active {
   font-weight: 700;
   opacity: 1;
 }
 
-/* RIGHT CONTENT */
+/* ---------------------- MAIN CONTENT ---------------------- */
 .content {
-  margin-left: 0;
-  padding: 40px;
-  line-height: 1.6;
-  min-height: 100vh;
-  box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Keep content from getting too wide */
+/* Limit width of all child blocks */
 .content > * {
-  width: 100%;
   max-width: 900px;
+  width: 100%;
 }
 
-/* Inner content width control */
-.content > * {
-  width: 100%;
-  max-width: 900px;
-  align-items: center;
-}
-
-/* Content headings */
+/* Headings */
 .content h1,
 .content h2 {
   margin-top: 0;
 }
 
-.about {
-  text-align: center;
-}
-
-.about p {
-  font-size: 1.05em;
-  line-height: 1.75;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #222;
-  align-items: center;
-}
-
-/* PROFILE (image + text side-by-side) */
-.profile {
-  display: flex;
-  margin-left: 0;
-  max-width: 900px;
-  padding: 40px;
-  min-height: 100vh;
-  align-items: flex-start;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.profile img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .nav {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .content {
-    margin-left: 0;
-    padding: 20px;
-    align-items: stretch;
-  }
-
-  .content > * {
-    max-width: 100%;
-  }
-
-  .profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .profile img {
-    margin-bottom: 1rem;
-  }
-}
-
-/* ABOUT PAGE */
+/* ---------------------- ABOUT PAGE ---------------------- */
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;  /* vertical centering */
   text-align: center;
-  min-height: calc(100vh - 180px); /* fills viewport below navbar */
+  min-height: calc(100vh - 180px); /* full viewport minus navbar */
   padding: 0 20px;
-  background: #f9f9f9; /* subtle contrast with navbar */
+  background: #f9f9f9;
 }
 
 .about h2 {
@@ -212,10 +133,63 @@ body {
 }
 
 .about p + p {
-  margin-top: 20px; /* space between paragraphs */
+  margin-top: 20px; /* spacing between paragraphs */
 }
 
-/* Optional subtle highlight for keywords */
 .about p strong {
-  color: #0057b8;  /* match nav links color */
+  color: #0057b8;  /* optional keyword highlight */
+}
+
+/* ---------------------- PROFILE ---------------------- */
+.profile {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 2.5rem auto;
+  max-width: 900px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------------------- MOBILE RESPONSIVENESS ---------------------- */
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+
+  .content {
+    padding: 20px;
+    align-items: stretch;
+  }
+
+  .content > * {
+    max-width: 100%;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile img {
+    margin-bottom: 1rem;
+  }
+
+  .about {
+    min-height: auto;
+    padding: 40px 15px;
+  }
 }
