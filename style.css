@@ -95,10 +95,8 @@ body {
 }
 
 .footer img {
-  height: 100%;   /* image fills banner height */
-  width: auto;    /* maintain aspect ratio */
-  object-fit: contain;
-  max-width: 70%; /* optional: image width limit */
+  height: 140%;   /* makes image proportionally bigger */
+  width: auto;    /* keeps aspect ratio correct */
 }
 
 /* ---------------------- MAIN CONTENT ---------------------- */
