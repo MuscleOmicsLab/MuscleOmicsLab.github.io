@@ -33,7 +33,9 @@ body {
 }
 
 .nav img {
-  max-height: 80px;
+  width: auto;           
+  height: 120px;         
+  max-width: 90%;        
   margin-bottom: 10px;
 }
 
