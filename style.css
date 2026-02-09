@@ -101,18 +101,21 @@ body {
 }
 
 /* ---------------------- ABOUT PAGE ---------------------- */
-.about {
+.content.about {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;  /* vertical centering */
-  text-align: center;
+  justify-content: center; /* vertical centering */
   min-height: calc(100vh - 180px); /* full viewport minus navbar */
   padding: 0 20px;
-  background: #f9f9f9;
+  flex-direction: column;
 }
 
-.about h2 {
+.about-inner {
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-inner h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 2.2em;
@@ -121,23 +124,16 @@ body {
   letter-spacing: 0.5px;
 }
 
-.about p {
-  max-width: 700px;
+.about-inner p {
   font-family: "Georgia", serif;
   font-size: 1.15em;
   line-height: 1.9;
   color: #333;
-  margin: 0 auto;
-  padding: 0 10px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about p + p {
-  margin-top: 20px; /* spacing between paragraphs */
-}
-
-.about p strong {
-  color: #0057b8;  /* optional keyword highlight */
+.about-inner p strong {
+  color: #0057b8; /* subtle highlight */
 }
 
 /* ---------------------- PROFILE ---------------------- */
