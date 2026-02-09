@@ -104,14 +104,29 @@ body {
   max-width: none; 
 }
 
-/* ---------------------- MAIN CONTENT ---------------------- */
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* vertical centering */
-  min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 200px 20px 40px 20px;
-  flex-direction: column;
+/* ---------------------- MAIN CONTENT (GLOBAL) ---------------------- */
+main.content {
+  display: block;               /* normal flow */
+  margin: 0 auto;               /* horizontal centering */
+  max-width: 900px;             /* keeps lines readable */
+  padding: 80px 20px 40px 20px; /* top = space below nav, right, bottom, left */
+  box-sizing: border-box;       /* include padding in width */
+  color: #111;                  /* dark text for readability */
+  line-height: 1.6;             /* improves readability */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* clean journal style */
+}
+
+/* Optional: style headings consistently */
+main.content h1, main.content h2, main.content h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+/* Optional: paragraphs spacing */
+main.content p {
+  margin-bottom: 1em;
+  text-align: left; /* align text to the top left */
 }
 
 .about-inner {
