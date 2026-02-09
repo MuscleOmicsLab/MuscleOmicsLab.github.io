@@ -107,7 +107,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* vertical centering */
-  min-height: calc(100vh - 180px); /* full viewport minus navbar */
+  min-height: calc(100vh - 200px); /* full viewport minus navbar */
   padding: 0 20px;
   flex-direction: column;
 }
