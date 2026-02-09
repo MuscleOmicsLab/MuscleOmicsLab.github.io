@@ -23,7 +23,6 @@ body {
   width: 100%;
   background: transparent;
   border-bottom: none;
-  border-bottom: 1px solid #ddd;
   box-sizing: border-box;
   padding: 20px 0;
   z-index: 1000;
