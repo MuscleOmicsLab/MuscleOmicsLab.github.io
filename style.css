@@ -84,19 +84,23 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 250px;
-  height: 100%;  /* increase height */
+
+  width: 100%;
+  height: 220px;              /* controls image size */
   background: rgba(255, 255, 255, 0.95);
+
   display: flex;
-  align-items: flex-end; /* anchors image to bottom */
+  align-items: center;        /* vertical centering */
   padding-left: 20px;
+
   z-index: 1000;
   box-sizing: border-box;
 }
 
 .footer img {
-  height: 140%;   /* makes image proportionally bigger */
-  width: auto;    /* keeps aspect ratio correct */
+  height: 100%;   /* makes image proportionally bigger */
+  width: auto;
+  max-width: none; 
 }
 
 /* ---------------------- MAIN CONTENT ---------------------- */
@@ -128,7 +132,7 @@ body {
   align-items: center;
   justify-content: center; /* vertical centering */
   min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 160px 20px 40px 20px;
+  padding: 260px 20px 40px 20px;
   flex-direction: column;
 }
 
