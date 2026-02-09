@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: #ffffff;
   box-sizing: border-box;
   padding: 20px 0;
   z-index: 1000;
@@ -109,7 +109,7 @@ main.content {
   display: block;               /* normal flow */
   margin: 0 auto;               /* horizontal centering */
   max-width: 900px;             /* keeps lines readable */
-  padding: 80px 20px 40px 20px; /* top = space below nav, right, bottom, left */
+  padding: 180px 20px 40px 20px; /* top = space below nav, right, bottom, left */
   box-sizing: border-box;       /* include padding in width */
   color: #111;                  /* dark text for readability */
   line-height: 1.6;             /* improves readability */
