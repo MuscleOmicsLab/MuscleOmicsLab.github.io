@@ -15,22 +15,22 @@ body {
   display: flex;
 }
 
-/* LEFT NAVIGATION */
+/* TOP NAVIGATION BAR */
+
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 400px;
-  height: 100vh;
-  padding: 40px 20px;
-  border-right: 1px solid #ddd;
+  width: 100%;
   background: #ffffff;
+  border-bottom: 1px solid #ddd;
   box-sizing: border-box;
+  padding: 20px 0;
+  z-index: 1000;
+  padding: 30px 0 15px 0;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 60px;
+  align-items: center;
 }
 
 /* Lab title */
@@ -56,8 +56,8 @@ body {
 
 /* List items */
 .nav li {
-  text-align: center;
-  margin-bottom: 18px;
+  display: inline-block;
+  margin: 0 18px;
 }
 
 /* Links */
@@ -87,7 +87,8 @@ body {
 
 /* RIGHT CONTENT */
 .content {
-  margin-left: 400px;        /* must match .nav width */
+  margin-left: 0;
+  margin-top: 180px;
   padding: 40px;
   line-height: 1.6;
   min-height: 100vh;
@@ -119,8 +120,8 @@ body {
 /* PROFILE (image + text side-by-side) */
 .profile {
   display: flex;
-  margin-left: 405px;
-  max-width: calc(100% - 410px);
+  margin-left: 0;
+  max-width: 900px;
   padding: 40px;
   min-height: 100vh;
   align-items: flex-start;
@@ -141,7 +142,6 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    border-right: none;
     border-bottom: 1px solid #ddd;
   }
 
