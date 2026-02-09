@@ -111,7 +111,11 @@ body {
 }
 
 .about-inner {
-  max-width: 700px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  /* change from Georgia to Helvetica */
+  font-size: 1.15em;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 20px;
   text-align: center;
 }
 
