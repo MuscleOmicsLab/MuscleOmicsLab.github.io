@@ -111,7 +111,7 @@ body {
   align-items: center;
   justify-content: center; /* vertical centering */
   min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 240px 20px 40px 20px;
+  padding: 160px 20px 40px 20px;
   flex-direction: column;
 }
 
@@ -159,7 +159,7 @@ body {
   align-items: center;
   justify-content: center; /* vertical centering */
   min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 240px 20px 40px 20px;
+  padding: 160px 20px 40px 20px;
   flex-direction: column;
 }
 
