@@ -111,7 +111,7 @@ body {
 }
 
 .about-inner {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  /* change from Georgia to Helvetica */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.15em;
   line-height: 1.9;
   color: #333;
@@ -129,7 +129,7 @@ body {
 }
 
 .about-inner p {
-  font-family: "Georgia", serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.15em;
   line-height: 1.9;
   color: #333;
