@@ -211,17 +211,21 @@ main.content p {
   flex-direction: row;
   margin: 0 auto 2.5rem auto;
   max-width: 900px;
-  min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 200px 20px 40px 20px;
-  gap: 1.5rem;
-  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 2rem;
+  align-items: center;   /* THIS is the key change */
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.profile div {
+  max-width: 650px;
 }
 
 /* ---------------------- TEAM MEMBER (SMALL ENTRY) ---------------------- */
