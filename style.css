@@ -361,7 +361,7 @@ main.content p {
 
 /* PI centered alone */
 .pi-section {
-  display: flex;
+  display: grid;
   justify-content: center;
   margin-bottom: 40px;
 }
