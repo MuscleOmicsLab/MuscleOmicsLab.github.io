@@ -290,3 +290,47 @@ main.content p {
     padding: 40px 15px;
   }
 }
+
+/* PEOPLE GRID LAYOUT */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 20px 80px 20px;
+}
+
+.person-card {
+  text-align: center;
+}
+
+.person-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.person-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.person-card .role {
+  font-weight: 600;
+  color: #0057b8;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.person-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+}
