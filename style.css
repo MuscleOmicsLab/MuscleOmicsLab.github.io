@@ -307,11 +307,13 @@ main.content p {
 }
 
 .person-card img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;     /* crops instead of stretching */
+  object-position: center;
   border-radius: 8px;
-  margin-bottom: 15px;
+  display: block;
+  margin: 0 auto 15px auto;
 }
 
 .person-card h3 {
