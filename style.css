@@ -116,7 +116,7 @@ main.content {
   padding: 40px 20px 40px 20px;
   box-sizing: border-box;       /* include padding in width */
   color: #111;                  /* dark text for readability */
-  line-height: 1.5;             /* improves readability */
+  line-height: 1.3;             /* improves readability */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* clean journal style */
 }
 
@@ -135,7 +135,7 @@ main.content p {
 
 .about-inner {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.3;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
@@ -151,7 +151,7 @@ main.content p {
 
 .about-inner p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.3;
   color: #333;
   margin-bottom: 20px;
 }
@@ -183,7 +183,7 @@ main.content p {
 
 .about-inner {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.3;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
@@ -310,8 +310,8 @@ main.content p {
 }
 
 .person-card img {
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;     /* crops instead of stretching */
   object-position: center;
   border-radius: 8px;
@@ -321,7 +321,7 @@ main.content p {
 
 .person-card h3 {
   margin: 10px 0 5px 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .person-card .role {
@@ -332,7 +332,7 @@ main.content p {
 }
 
 .person-card p {
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   line-height: 1.5;
 }
 
@@ -354,8 +354,8 @@ main.content p {
 }
 
 .pi-card img {
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
 }
 
 /* Postdocs row */
@@ -382,8 +382,8 @@ main.content p {
 
 /* Make PI larger */
 .pi-card img {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
 }
 
 /* Postdoc grid */
