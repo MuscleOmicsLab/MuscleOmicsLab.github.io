@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 180px;  /* space for fixed navbar */
+}
+
 /* ---------------------- Container ---------------------- */
 .container {
   display: flex;
@@ -109,8 +113,7 @@ main.content {
   display: block;               /* normal flow */
   margin: 0 auto;               /* horizontal centering */
   max-width: 900px;             /* keeps lines readable */
-  min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 200px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
   box-sizing: border-box;       /* include padding in width */
   color: #111;                  /* dark text for readability */
   line-height: 1.8;             /* improves readability */
@@ -335,4 +338,57 @@ main.content p {
 
 .person-card:hover {
   transform: translateY(-5px);
+}
+
+.people-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 100px 20px;
+}
+
+/* PI row */
+.pi-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.pi-card img {
+  width: 260px;
+  height: 260px;
+}
+
+/* Postdocs row */
+.postdoc-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* ---------------------- PEOPLE STRUCTURE ---------------------- */
+
+.people-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 100px 20px;
+}
+
+/* PI centered alone */
+.pi-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+/* Make PI larger */
+.pi-card img {
+  width: 260px;
+  height: 260px;
+}
+
+/* Postdoc grid */
+.postdoc-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
 }
