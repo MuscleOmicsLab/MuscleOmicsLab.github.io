@@ -310,8 +310,8 @@ main.content p {
 }
 
 .person-card img {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;     /* crops instead of stretching */
   object-position: center;
   border-radius: 8px;
@@ -333,7 +333,7 @@ main.content p {
 
 .person-card p {
   font-size: 0.90rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .person-card:hover {
@@ -346,23 +346,9 @@ main.content p {
   padding: 40px 20px 100px 20px;
 }
 
-/* PI row */
-.pi-section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-}
-
 .pi-card img {
   width: 220px;
   height: 220px;
-}
-
-/* Postdocs row */
-.postdoc-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
 }
 
 /* ---------------------- PEOPLE STRUCTURE ---------------------- */
@@ -377,13 +363,7 @@ main.content p {
 .pi-section {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
-}
-
-/* Make PI larger */
-.pi-card img {
-  width: 240px;
-  height: 240px;
+  margin-bottom: 40px;
 }
 
 /* Postdoc grid */
