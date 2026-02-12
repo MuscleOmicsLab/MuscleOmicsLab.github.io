@@ -338,10 +338,6 @@ main.content p {
   margin-bottom: 6px;
 }
 
-.person-card:hover {
-  transform: translateY(-5px);
-}
-
 .people-wrapper {
   max-width: 1100px;
   margin: 0 auto;
