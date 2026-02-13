@@ -177,7 +177,7 @@ main.content p {
   align-items: center;
   justify-content: center; /* vertical centering */
   min-height: calc(100vh - 160px); /* full viewport minus navbar */
-  padding: 200px 20px 40px 20px;
+  padding: 200px 20px 40px 100px;
   flex-direction: column;
 }
 
