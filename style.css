@@ -259,6 +259,10 @@ main.content p {
   margin-top: 60px;
 }
 
+main, .content, .people-section { /* whatever wraps your blurbs */
+  padding-bottom: 120px; /* a bit taller than your footer/logo */
+}
+
 /* ---------------------- MOBILE RESPONSIVENESS ---------------------- */
 @media (max-width: 768px) {
   .nav {
