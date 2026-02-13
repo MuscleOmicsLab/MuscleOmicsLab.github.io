@@ -306,6 +306,11 @@ main.content p {
   padding-bottom: 120px;
 }
 
+main.content,
+.people-grid,
+.people-wrapper {
+  padding-bottom: 240px; /* must be ≥ footer height (220px) */
+}
 .person-card {
   text-align: center;
   padding: 10px 10px 20px 10px;
