@@ -259,10 +259,6 @@ main.content p {
   margin-top: 60px;
 }
 
-main, .content, .people-section { /* whatever wraps your blurbs */
-  padding-bottom: 120px; /* a bit taller than your footer/logo */
-}
-
 /* ---------------------- MOBILE RESPONSIVENESS ---------------------- */
 @media (max-width: 768px) {
   .nav {
@@ -307,6 +303,7 @@ main, .content, .people-section { /* whatever wraps your blurbs */
   max-width: 1100px;
   margin: 0 auto;
   padding: 200px 20px 80px 20px;
+  padding-bottom: 120px;
 }
 
 .person-card {
@@ -383,3 +380,4 @@ main, .content, .people-section { /* whatever wraps your blurbs */
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
 }
+
