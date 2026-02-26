@@ -4,10 +4,8 @@ plugins:
 scholar:
   style: apa
   locale: en
-
   source: ./_bibliography
   bibliography: publications.bib
-
   sort_by: year
   order: descending
   group_by: year
